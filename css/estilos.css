@@ -1,0 +1,32 @@
+.caja-personalizada{
+    border: 1 px;
+    padding: 2 rem;
+}
+
+.caja-personalizada label{
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+    border: 1px solid darkblue;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caja-personalizada input[type="checkbox"]{
+    display: none;
+}
+
+.caja-personalizada label .marca-de-caja{
+    width: 25px;
+    height: 25px;
+    display: none;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.caja-personalizada input[type="checkbox"]:checked + label .marca-de-caja{
+    display: block;
+}
